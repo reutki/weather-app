@@ -11,10 +11,10 @@ export function WelcomePage() {
         <Logo />
       </LogoScreen>
       <ButtonStyled>
-        <Button variant="contained" color="primary" fullWidth="true">
+        <Button variant="contained" fullWidth color="primary">
           Sign In
         </Button>
-        <Button variant="contained" color="secondary" fullWidth="true">
+        <Button variant="contained" fullWidth color="secondary">
           Sign Up
         </Button>
       </ButtonStyled>
