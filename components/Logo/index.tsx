@@ -1,7 +1,6 @@
 import React from "react";
 import Image from "next/image";
 import { LogoStyle } from "./styled";
-import { Box } from "@mui/material";
 
 export const Logo = () => {
   return (

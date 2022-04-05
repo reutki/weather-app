@@ -1,11 +1,11 @@
 import type { NextPage } from "next";
-import SearchAppBar from "../components/searchBox/searchbox";
 import { WelcomePage } from "../components/WelcomePage/welcome";
+import { AppStyle } from "./styled";
 const Home: NextPage = () => {
   return (
-    <div>
+    <AppStyle>
       <WelcomePage />
-    </div>
+    </AppStyle>
   );
 };
 
