@@ -15,7 +15,6 @@ export const Logo = () => {
           height={65}
           alt={"logo"}
         />
-        <span className="circle"></span>
       </div>
     </LogoStyle>
   );
