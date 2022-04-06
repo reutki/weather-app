@@ -1,6 +1,14 @@
 import { ThemeProvider, createTheme } from "@mui/material";
 
-export default function Theme() {
-  return;
-  <div></div>;
-}
+export const theme = createTheme({
+  palette: {
+    primary: {
+      main: "#4CD964",
+      contrastText: "#fff",
+    },
+    secondary: {
+      main: "#006FFF",
+      contrastText: "#fff",
+    },
+  },
+});

@@ -13,5 +13,5 @@ export const LogoScreen = styled.div`
 `;
 export const WelcomePageStyle = styled.div`
   display: grid;
-  max-width: 375px;
+  max-width: 425px;
 `;
