@@ -14,11 +14,15 @@ export const LogoScreen = styled.div`
 export const WelcomePageStyle = styled.div`
   display: grid;
   max-width: 450px;
+  width: 100%;
 `;
 
 export const WelcomePageBackground = styled.div`
   height: 100vh;
+  display: grid;
   width: 100vw;
+  align-items: center;
+  justify-items: center;
   background-color: #4158d0;
   background-image: linear-gradient(
     43deg,

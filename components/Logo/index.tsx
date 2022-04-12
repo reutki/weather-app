@@ -8,10 +8,10 @@ export const Logo = () => {
       <div className="logoWrapper">
         <Image
           className="logo"
-          src={"/SVG/Logo.svg"}
+          src={"/SVG/logo.svg"}
           layout="responsive"
-          width={238}
-          height={65}
+          width={50}
+          height={30}
           alt={"logo"}
         />
       </div>
