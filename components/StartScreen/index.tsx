@@ -19,7 +19,7 @@ export default function StartScreen() {
       <CityTab
         name="Kharkov"
         address="Ukraine"
-        icon="image"
+        icon="/SVG/rainy.svg"
         rainProb={20}
         wind={20}
         temperature={30}

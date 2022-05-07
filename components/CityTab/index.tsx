@@ -1,7 +1,24 @@
-import { Box, Typography, Card, CardContent, SvgIcon } from "@mui/material";
+import {
+  Box,
+  Typography,
+  Card,
+  CardContent,
+  SvgIcon,
+  CardHeader,
+  Avatar,
+  Paper,
+  containerClasses,
+} from "@mui/material";
+import Image from "next/image";
 import React, { FC } from "react";
 import { Props } from "./city.d";
-import { CityTabStyle } from "./styled";
+import {
+  CityTabStyle,
+  CardContentTop,
+  CityData,
+  PaperWrapper,
+  IconWrapper,
+} from "./styled";
 export const CityTab: React.FC<Props> = ({
   name,
   address,
@@ -11,18 +28,31 @@ export const CityTab: React.FC<Props> = ({
   icon,
 }) => {
   return (
-    <Card>
-      <CityTabStyle>
-        <CardContent>
-          <Typography>{name}</Typography>
-          <Typography>{address}</Typography>
-          <Typography>{icon}</Typography>
-          <Typography>{temperature}</Typography>
-          <Typography>{rainProb}</Typography>
-          <Typography>{wind}</Typography>
-          <Typography>{icon}</Typography>
-        </CardContent>
-      </CityTabStyle>
+    <Card sx={{ maxWidth: 500 }}>
+      <PaperWrapper>
+        <Paper elevation={5} variant="elevation">
+          <CardHeader
+            title={name}
+            subheader={address}
+            avatar={
+              <IconWrapper>
+                <Image
+                  src={icon}
+                  alt="icon"
+                  width={10}
+                  height={10}
+                  layout="responsive"
+                />
+              </IconWrapper>
+            }
+          />
+          <CardContent>
+            <Typography>{temperature}</Typography>
+            <Typography>{rainProb}</Typography>
+            <Typography>{wind}</Typography>
+          </CardContent>
+        </Paper>
+      </PaperWrapper>
     </Card>
   );
 };

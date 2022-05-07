@@ -5,12 +5,13 @@ export const theme = createTheme({
   palette: {
     primary: {
       main: "#63e067",
-      contrastText: "#fff",
+      contrastText: "#ffff",
     },
     secondary: {
       main: "#379FFF",
-      contrastText: "#fff",
+      contrastText: "#ffff",
     },
   },
+  typography: {},
 });
 export default theme;
