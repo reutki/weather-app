@@ -12,13 +12,7 @@ import {
 import Image from "next/image";
 import React, { FC } from "react";
 import { Props } from "./city.d";
-import {
-  CityTabStyle,
-  CardContentTop,
-  CityData,
-  PaperWrapper,
-  IconWrapper,
-} from "./styled";
+import { PaperWrapper, IconWrapper, RainProbability, Wind } from "./styled";
 export const CityTab: React.FC<Props> = ({
   name,
   address,
@@ -34,22 +28,34 @@ export const CityTab: React.FC<Props> = ({
           <CardHeader
             title={name}
             subheader={address}
-            avatar={
+            avatar={<Avatar src={icon} variant="circular" />}
+          />
+          <CardContent>
+            <Typography> {temperature} &#8451;</Typography>
+            <RainProbability>
               <IconWrapper>
                 <Image
-                  src={icon}
-                  alt="icon"
-                  width={10}
-                  height={10}
+                  src="/SVG/umbrella.svg"
+                  alt="umbrella"
+                  width={100}
+                  height={100}
                   layout="responsive"
                 />
               </IconWrapper>
-            }
-          />
-          <CardContent>
-            <Typography>{temperature}</Typography>
-            <Typography>{rainProb}</Typography>
-            <Typography>{wind}</Typography>
+              <Typography>{rainProb}%</Typography>
+            </RainProbability>
+            <Wind>
+              <IconWrapper>
+                <Image
+                  src="/SVG/wind.svg"
+                  alt="umbrella"
+                  width={100}
+                  height={100}
+                  layout="responsive"
+                />
+              </IconWrapper>
+              <Typography>{wind}</Typography>
+            </Wind>
           </CardContent>
         </Paper>
       </PaperWrapper>

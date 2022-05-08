@@ -17,8 +17,8 @@ export default function StartScreen() {
         </Button>
       </ObjectsData>
       <CityTab
-        name="Kharkov"
-        address="Ukraine"
+        name="Chisinau"
+        address="Moldova"
         icon="/SVG/rainy.svg"
         rainProb={20}
         wind={20}
