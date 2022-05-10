@@ -7,11 +7,11 @@ export default function StartScreen() {
     <MainScreen>
       <TopData>
         <ObjectsData>
-          <Typography variant="h6">My Objects</Typography>
+          <Typography variant="body1">My Objects</Typography>
           <ObjectsStatus>
-            <Typography variant="body1">Active</Typography>
-            <Typography variant="body1">Paused</Typography>
-            <Typography variant="body1">Stopped</Typography>
+            <Typography variant="body2">Active</Typography>
+            <Typography variant="body2">Paused</Typography>
+            <Typography variant="body2">Stopped</Typography>
           </ObjectsStatus>
         </ObjectsData>
         <Button className="buttonAddObject" variant="contained" size="small">
