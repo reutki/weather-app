@@ -1,10 +1,6 @@
 import type { NextPage } from "next";
-import { WelcomePage } from "../components/WelcomePage/welcome";
-import { AppStyle } from "../components/App/styled";
-import SignInForm from "../components/Sign In";
-import SignUpForm from "../components/SignUp";
 import StartScreen from "../components/StartScreen";
-
+import { ContainerStyle } from "../components/Container/styled";
 const Home: NextPage = () => {
   return <StartScreen />;
 };

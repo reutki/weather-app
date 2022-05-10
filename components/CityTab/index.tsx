@@ -1,18 +1,16 @@
 import {
-  Box,
   Typography,
   Card,
   CardContent,
-  SvgIcon,
   CardHeader,
   Avatar,
   Paper,
-  containerClasses,
 } from "@mui/material";
 import Image from "next/image";
 import React, { FC } from "react";
 import { Props } from "./city.d";
 import { PaperWrapper, IconWrapper, RainProbability, Wind } from "./styled";
+
 export const CityTab: React.FC<Props> = ({
   name,
   address,

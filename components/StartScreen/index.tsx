@@ -1,21 +1,23 @@
 import { Box, Button, Typography } from "@mui/material";
 import React from "react";
-import { MainApp, ObjectsData, ObjectsStatus } from "./styled";
+import { MainScreen, ObjectsData, ObjectsStatus, TopData } from "./styled";
 import { CityTab } from "../CityTab";
 export default function StartScreen() {
   return (
-    <MainApp>
-      <ObjectsData>
-        <Typography>My Objects</Typography>
-        <ObjectsStatus>
-          <Typography>Active</Typography>
-          <Typography>Paused</Typography>
-          <Typography>Stopped</Typography>
-        </ObjectsStatus>
-        <Button className="buttonAddObject" variant="contained">
+    <MainScreen>
+      <TopData>
+        <ObjectsData>
+          <Typography variant="h6">My Objects</Typography>
+          <ObjectsStatus>
+            <Typography variant="body1">Active</Typography>
+            <Typography variant="body1">Paused</Typography>
+            <Typography variant="body1">Stopped</Typography>
+          </ObjectsStatus>
+        </ObjectsData>
+        <Button className="buttonAddObject" variant="contained" size="small">
           New Object
         </Button>
-      </ObjectsData>
+      </TopData>
       <CityTab
         name="Chisinau"
         address="Moldova"
@@ -24,6 +26,6 @@ export default function StartScreen() {
         wind={20}
         temperature={30}
       />
-    </MainApp>
+    </MainScreen>
   );
 }
