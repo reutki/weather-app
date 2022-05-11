@@ -2,6 +2,8 @@ import { Box, Button, Typography } from "@mui/material";
 import React from "react";
 import { MainScreen, ObjectsData, ObjectsStatus, TopData } from "./styled";
 import { CityTab } from "../CityTab";
+import { HomeIcon } from "../Icons";
+import { BottomMenu } from "../BottomMenu";
 export default function StartScreen() {
   return (
     <MainScreen>
@@ -26,6 +28,7 @@ export default function StartScreen() {
         wind={20}
         temperature={30}
       />
+      <BottomMenu />
     </MainScreen>
   );
 }
